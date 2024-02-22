@@ -35,7 +35,6 @@ int main()
     char* token = strtok(tab, " ");
     while (token != NULL) {
         if (ispunct((unsigned char)*token)) {
-            // Correction : utiliser *token au lieu de token pour obtenir le caractère actuel
             token = strtok(NULL, " ");
             continue;
         }
